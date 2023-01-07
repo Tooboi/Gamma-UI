@@ -10,8 +10,6 @@ A clean, simple, and responsive CSS framework
 
 ## Grid
 
----
-
 Works on a 12 column grid using with each number representing how many grid columns the element will take up
 
 The classes are named using the format col-{numOfCols}
@@ -33,8 +31,6 @@ Must be inside a container
 
 ## Font
 
----
-
 The classes are named using the format fw-{weight}
 
 - light - 300
@@ -48,8 +44,6 @@ The classes are named using the format fw-{weight}
 - black - 900
 
 ## Spacing
-
----
 
 The classes are named using the format {property}{sides}-{size}
 
@@ -93,13 +87,9 @@ The classes are named using the format {property}{sides}-{size}
 
 ## Color
 
----
-
 Colors are defined in the `:root` class at the beginning of the css file
 
 ## Buttons
-
----
 
 Button format is created with `btn`
 
