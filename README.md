@@ -1,14 +1,24 @@
-# Gamma UI
+<p align="center">
+<img  width="100px" src="./images/Logo.png"></img>
+</p>
+
+<h1 style="text-align:center">Gamma UI</h1>
+
+![GitHub top language](https://img.shields.io/github/languages/top/tooboi/gamma-ui?color=77B255&logo=sass&logoColor=77B255)
 
 A clean, simple, and responsive CSS framework
 
 - [Grid](#grid)
+- [Flex](#flex)
 - [Font](#font)
 - [Spacing](#spacing)
 - [Color](#color)
 - [Buttons](#buttons)
+- [Cards](#cards)
 
 ## Grid
+
+### Columns
 
 Works on a 12 column grid using with each number representing how many grid columns the element will take up
 
@@ -29,7 +39,34 @@ Must be inside a container
 </div>
 ```
 
+### Breakpoints
+
+The column will be the set number of columns at that breakpoint and below
+
+The classes are named using the format col-{breakpoint}-{numOfCols}
+
+- sm - 576px
+
+- md - 768px
+
+- lg - 992px
+
+- xl - 1200px
+
+Examples
+
+- col-sm-3
+
+- col-md-5
+
+- col-xl-4
+
+## Flex
+
+
 ## Font
+
+### Weight
 
 The classes are named using the format fw-{weight}
 
@@ -42,6 +79,18 @@ The classes are named using the format fw-{weight}
 - bold - 700
 
 - black - 900
+
+### Text Align
+
+The classes are named using the format text-align-{alignment}
+
+- text-align-left
+
+- text-align-right
+
+- text-align-center
+
+- text-align-justify
 
 ## Spacing
 
@@ -73,15 +122,15 @@ The classes are named using the format {property}{sides}-{size}
 
 - 0 - for classes that eliminate the margin or padding by setting it to 0
 
-- 1 - (by default) for classes that set the margin or padding to $spacer * .25
-
-- 2 - (by default) for classes that set the margin or padding to $spacer * .5
-
-- 3 - (by default) for classes that set the margin or padding to $spacer
-
-- 4 - (by default) for classes that set the margin or padding to $spacer * 1.5
-
-- 5 - (by default) for classes that set the margin or padding to $spacer * 3
+- 1 - sets the margin or padding to 0.25rem
+s
+- 2 - sets the margin or padding to 0.5rem
+s
+- 3 - sets the margin or padding to 1rem
+s
+- 4 - sets the margin or padding to 1.5rem
+s
+- 5 - sets the margin or padding to 3rem
 
 - m-auto - for classes that set the margin to auto
 
@@ -98,3 +147,23 @@ The color and style classes are named using the format btn-{outline}-{color}
 outline variable is optional and will be a border only button
 
 A button class would look like `btn btn-primary`
+
+## Cards
+
+Cards provide a surface to place your features to separate them from the background
+
+Below is an example of how to use them
+
+![Card](./images/Card.png)
+
+```
+<div class="container card">
+  <div class="row justify-content-center">
+    <h2 class="text-align-center">Card</h2>
+  </div>
+  <div class="row justify-content-center flex-wrap pb-3">
+    <button class="btn btn-outline-primary mx-1">Max-Width</button>
+    <button class="btn btn-primary mx-1">960px</button>
+  </div>
+</div>
+```
