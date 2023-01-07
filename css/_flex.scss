@@ -1,0 +1,52 @@
+$align-content-values: center, space-between, space-around, space-evenly, stretch;
+@each $value in $align-content-values {
+   .align-content-#{$value} {
+      align-content: $value;
+   }
+}
+$justify-content-values: start, end, center, space-between, space-around, space-evenly;
+@each $value in $justify-content-values {
+  .justify-content-#{$value} {
+    justify-content: $value;
+  }
+}
+$align-items-values: start, center, end, stretch, baseline;
+@each $value in $align-items-values {
+  .align-items-#{$value} {
+    align-items: $value;
+  }
+}
+$align-self-values: start, center, end, stretch, baseline;
+@each $value in $align-self-values {
+  .align-self-#{$value} {
+    align-self: $value;
+  }
+}
+$justify-items-values: center, start, end, stretch;
+@each $value in $justify-items-values {
+   .justify-items-#{$value} {
+      justify-items: $value;
+   }
+}
+
+.flex {
+   display: flex;
+}
+.flex-wrap {
+   flex-wrap: wrap;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+ }
+.flex-row {
+    flex-direction: row;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row-reverse {
+flex-direction: row-reverse;
+}
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}

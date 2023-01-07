@@ -4,8 +4,8 @@
   "description": "A clean, simple, and responsive CSS framework",
   "main": "index.js",
   "scripts": {
-    "sass": "sass ./css/_gamma_UI.scss ./css/gamma_UI.css",
-    "sass-watch": "sass --watch ./css/_gamma_UI.scss ./css/gamma_UI.css"
+    "sass": "sass ./css/gamma_UI.scss ./css/gamma_UI.css",
+    "sass-watch": "sass --watch ./css/gamma_UI.scss ./css/gamma_UI.css"
   },
   "repository": {
     "type": "git",

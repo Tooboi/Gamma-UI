@@ -1,0 +1,38 @@
+:root {
+   --ff: sans-serif;
+
+   --line-2: 0.125rem;
+   --line-3: 0.2rem;
+   --line-4: 1.25rem;
+
+   --col-bg: #211c20;
+   --col-surface: #3d353c;
+   --col-surface2: #665964;
+
+   --col-p-200: #b4c296;
+   --col-p-500: #8cbe4d;
+   --col-p-700: #527f31;
+
+   --col-s-200: #96c2ac;
+   --col-s-500: #4dbe96;
+   --col-s-700: #317f6d;
+
+   --col-on-surface: #d2d2d2;
+   --col-on-primary: #1a1a1a;
+   --col-on-secondary: #1a1a1a;
+
+   --col-success: #2aa39a;
+   --col-danger: #ec4561;
+   --col-warning: #f8b425;
+   --col-info: #38a5f8;
+}
+body {
+   background-color: var(--col-bg);
+   font-family: var(--ff);
+   color: var(--col-on-surface);
+}
+::-webkit-scrollbar {
+   scrollbar-width: 0px;
+}
+
+@import "reset", "buttons", "spacing", "container", "breakpoints", "border", "flex", "cards", "type";

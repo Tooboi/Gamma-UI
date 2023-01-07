@@ -1,0 +1,53 @@
+// css/_buttons.scss
+$btn-colors: (
+   "primary": var(--col-p-500),
+   "secondary": var(--col-s-500),
+   "success": var(--col-success),
+   "danger": var(--col-danger),
+   "warning": var(--col-warning),
+   "info": var(--col-info),
+);
+
+.btn {
+   display: inline-block;
+   padding: 0.3rem 0.75rem;
+   font-weight: 500;
+   font-size: 1rem;
+   line-height: 1.5;
+   border: 1px solid transparent;
+   border-radius: 0.25rem;
+   color: var(--col-on-primary);
+   background-color: transparent;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+@each $name, $color in $btn-colors {
+   .btn-#{$name} {
+      background-color: $color;
+      color: var(--col-on-primary);
+      &:hover,
+      :active,
+      :focus {
+         border-color: $color;
+         box-shadow: 0 0 0 0.125rem $color;
+      }
+      &:active:focus {
+         box-shadow: 0 0 0 0 $color;
+      }
+   }
+   .btn-outline-#{$name} {
+      background-color: transparent;
+      border: 2px solid $color;
+      color: var(--col-on-surface);
+      &:hover,
+      :active,
+      :focus {
+         box-shadow: 0 0 0 0.125rem $color;
+      }
+      &:active:focus {
+         box-shadow: 0 0 0 0 $color;
+      }
+   }
+}

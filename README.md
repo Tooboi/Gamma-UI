@@ -10,6 +10,7 @@ A clean, simple, and responsive CSS framework
 
 - [Grid](#grid)
 - [Flex](#flex)
+- [Container](#container)
 - [Font](#font)
 - [Spacing](#spacing)
 - [Color](#color)
@@ -91,6 +92,16 @@ The classes are named using the format text-align-{alignment}
 - text-align-center
 
 - text-align-justify
+
+## Container
+
+container-{size}
+
+- container-md
+
+- container will be 100% width under the set breakpoint
+
+- Otherwise it will snap to each breakpoint
 
 ## Spacing
 

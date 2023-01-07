@@ -1,0 +1,21 @@
+$columns: 12;
+$breakpoints: (
+   "sm": 576px,
+   "md": 768px,
+   "lg": 992px,
+   "xl": 1200px,
+);
+@for $i from 1 through $columns {
+   .col-#{$i} {
+      grid-column: span $i;
+   }
+}
+@each $breakpoint, $bp-value in $breakpoints {
+   @for $i from 1 through $columns {
+      .col-#{$breakpoint}-#{$i} {
+         @media (min-width: $bp-value) {
+            grid-column: span $i;
+         }
+      }
+   }
+}

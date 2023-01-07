@@ -1,0 +1,14 @@
+$radius-sizes: (
+   0: 0rem,
+   1: 0.125rem,
+   2: 0.25rem,
+   3: 0.5rem,
+   4: 1rem,
+   "circle": 50%,
+);
+
+@each $rsize, $rvalue in $radius-sizes {
+   .br-#{$rsize} {
+      border-radius: $rvalue;
+   }
+}
