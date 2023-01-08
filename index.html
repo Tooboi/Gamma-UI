@@ -60,7 +60,7 @@
           <div class="justify-content-center flex-wrap pb-3">
             <p class="ps-4">Grid system is a flex container divided into 12 parts</p>
             <p class="ps-4">The classes are named using the format col-{numOfCols}</p>
-            <div class="row gap-1 px-1">
+            <div class="row px-1">
               <div class="card-fill col-1"><p class="text-align-center mb-0 fw-bold">col-1</p></div>
               <div class="card-fill col-1"><p class="text-align-center mb-0 fw-bold">col-1</p></div>
               <div class="card-fill col-1"><p class="text-align-center mb-0 fw-bold">col-1</p></div>
@@ -74,21 +74,25 @@
               <div class="card-fill col-1"><p class="text-align-center mb-0 fw-bold">col-1</p></div>
               <div class="card-fill col-1"><p class="text-align-center mb-0 fw-bold">col-1</p></div>
             </div>
-            <div class="row gap-1 my-1 px-1">
+            <div class="row my-1 px-1">
               <div class="card-fill col-1"><p class="text-align-center mb-0 fw-bold">col-1</p></div>
               <div class="card-fill col-2"><p class="text-align-center mb-0 fw-bold">col-2</p></div>
               <div class="card-fill col-3"><p class="text-align-center mb-0 fw-bold">col-3</p></div>
               <div class="card-fill col-4"><p class="text-align-center mb-0 fw-bold">col-4</p></div>
               <div class="card-fill col-2"><p class="text-align-center mb-0 fw-bold">col-2</p></div>
             </div>
-            <div class="row gap-1 px-1">
+            <div class="row px-1">
               <div class="card-fill col-12"><p class="text-align-center mb-0 fw-bold">col-12</p></div>
             </div>
             <div class="row justify-content-center">
-              <pre class="card p-2 mx-2">
-&lt;div class=&quot;container&quot;&gt;
-  &lt;div class=&quot;row col-12&quot;&gt;
-    ...content...
+              <pre class="card-fill-pre p-2 mx-2">
+&lt;div class=&quot;justify-content-center flex-wrap pb-3&quot;&gt;
+  &lt;div class=&quot;row px-1&quot;&gt;
+    &lt;div class=&quot;card-fill col-1&quot;&gt;&lt;p&gt;col-1&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-fill col-2&quot;&gt;&lt;p&gt;col-2&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-fill col-3&quot;&gt;&lt;p&gt;col-3&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-fill col-4&quot;&gt;&lt;p&gt;col-4&lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-fill col-2&quot;&gt;&lt;p&gt;col-2&lt;/p&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre
               >
@@ -127,7 +131,7 @@
           </div>
           <div class="row justify-content-center flex-wrap pb-3">
             <div class="container col-12 justify-content-center flex-column mt-4">
-              <h3 class="ps-4 mb-0">Flex properties</h3>
+              <h2 class="ps-4 mb-0">Flex properties</h2>
               <ul>
                 <li>flex</li>
                 <li>inline-flex</li>
@@ -136,11 +140,8 @@
               </ul>
             </div>
             <div class="container flex-column mt-4">
-              <h3 class="ps-4 mb-0">Flex Direction</h3>
+              <h2 class="ps-4">Flex Direction</h2>
               <div class="card-fill flex mx-1 justify-content-center">
-                <p class="mb-0">This is a flex box</p>
-              </div>
-              <div class="card-fill inline-flex mx-1">
                 <p class="mb-0">This is a flex box</p>
               </div>
               <ul>
@@ -148,6 +149,67 @@
                 <li>flex-row-reverse</li>
                 <li>flex-column</li>
                 <li>flex-column-reverse</li>
+              </ul>
+            </div>
+
+            <div class="container flex-column mt-4">
+              <h2 class="ps-4 mb-0">Justify Content</h2>
+              <div class="mx-2 p-2">
+                <h4 class="mb-2 mt-3 ps-2">justify-content-start</h4>
+                <div class="row card justify-content-start p-1 mb-2 gap-1">
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 1</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 2</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 3</p></div>
+                </div>
+                <h4 class="mb-2 mt-3 text-align-center">justify-content-center</h4>
+                <div class="row card justify-content-center p-1 mb-2 gap-1">
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 1</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 2</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 3</p></div>
+                </div>
+                <h4 class="mb-2 mt-3 pe-2 text-align-right">justify-content-end</h4>
+                <div class="row card justify-content-end p-1 mb-2 gap-1">
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 1</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 2</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 3</p></div>
+                </div>
+                <h4 class="mb-2 mt-3 text-align-center">justify-content-space-between</h4>
+                <div class="row card justify-content-space-between p-1 mb-2 gap-1">
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 1</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 2</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 3</p></div>
+                </div>
+                <h4 class="mb-2 mt-3 text-align-center">justify-content-space-around</h4>
+                <div class="row card justify-content-space-around p-1 mb-2 gap-1">
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 1</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 2</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 3</p></div>
+                </div>
+                <h4 class="mb-2 mt-3 text-align-center">justify-content-space-evenly</h4>
+                <div class="row card justify-content-space-evenly p-1 mb-2 gap-1">
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 1</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 2</p></div>
+                  <div class="card-fill"><p class="mb-0 px-1">Flex Item 3</p></div>
+                </div>
+                <div class="row justify-content-center">
+                  <pre class="card p-2 mx-2">
+&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row justify-content-center&quot;&gt;
+    ...content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="container flex-column mt-4">
+              <h2 class="ps-4 mb-0">Align Content</h2>
+              <ul>
+                <li>align-content-center</li>
+                <li>align-content-space-between</li>
+                <li>align-content-space-around</li>
+                <li>align-content-space-evenly</li>
+                <li>align-content-stretch</li>
               </ul>
             </div>
           </div>

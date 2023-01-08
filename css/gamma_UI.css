@@ -6,6 +6,7 @@
   --col-bg: #211c20;
   --col-surface: #3d353c;
   --col-surface2: #665964;
+  --col-surface3: hsl(309, 7%, 50%);
   --col-p-200: #b4c296;
   --col-p-500: #8cbe4d;
   --col-p-700: #527f31;
@@ -327,7 +328,7 @@ select {
 
 .side-nav {
   width: 100%;
-  position: -webkit-sticky; /* for Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   align-self: flex-start;
@@ -354,6 +355,18 @@ select {
   background-color: var(--col-surface2);
 }
 
+@media (min-width: 1400px) {
+  .side-nav {
+    border-left: var(--line-3) solid var(--col-surface2);
+    border-bottom-left-radius: 0.25rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .side-nav {
+    visibility: hidden;
+    max-width: 0%;
+  }
+}
 .container {
   display: flex;
   margin: 0 auto;
@@ -1327,7 +1340,13 @@ select {
 
 .card-fill {
   background-color: var(--col-surface2);
-  border: var(--line-3) solid var(--col-surface2);
+  border: var(--line-3) solid var(--col-surface3);
+  border-radius: 0.25rem;
+}
+
+.card-fill-pre {
+  background-color: var(--col-surface2);
+  border: var(--line-3) solid var(--col-surface3);
   border-radius: 0.25rem;
 }
 

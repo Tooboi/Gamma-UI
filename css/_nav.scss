@@ -34,7 +34,7 @@
 }
 .side-nav {
     width: 100%;
-    position: -webkit-sticky; /* for Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     align-self: flex-start;
@@ -61,3 +61,15 @@
         }
     }
 }
+@media (min-width: 1400px) {
+    .side-nav {
+        border-left: var(--line-3) solid var(--col-surface2);
+        border-bottom-left-radius: 0.25rem;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .side-nav {
+        visibility: hidden;
+        max-width: 0%;
+    }
+  }

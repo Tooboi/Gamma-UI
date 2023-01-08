@@ -5,6 +5,11 @@
  }
  .card-fill {
     background-color: var(--col-surface2);
-    border: var(--line-3) solid var(--col-surface2);
-    border-radius: 0.25rem;
+    border: var(--line-3) solid var(--col-surface3);
+    border-radius: 0.25rem;  
  }
+ .card-fill-pre {
+   background-color: var(--col-surface2);
+   border: var(--line-3) solid var(--col-surface3);
+   border-radius: 0.25rem;  
+}
