@@ -196,6 +196,22 @@ container-{size}
 
 ## Spacing
 
+### Gap
+
+The gaps between flex objects use this format gap-{size}
+
+- gap-0
+
+- gap-1
+
+- gap-2
+
+- gap-3
+
+- gap-4
+
+- gap-5
+
 The classes are named using the format {property}{sides}-{size}
 
 ### Property

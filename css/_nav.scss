@@ -34,6 +34,9 @@
 }
 .side-nav {
     width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: var(--col-surface);
     border-right: var(--line-3) solid var(--col-surface2);
     border-bottom: var(--line-3) solid var(--col-surface2);
@@ -46,7 +49,13 @@
             display: list-item;
             list-style: none;
             border-bottom: var(--line-3) solid var(--col-surface2);
-            padding: 0.25rem 0 0.25rem 1rem;
+            padding: 0.5rem 0 0.25rem 1rem;
+            &:last-child {
+                border-bottom: var(--line-3) solid transparent;
+            }
+            &:hover {
+                background-color: var(--col-surface2);
+            }
         }
     }
 }

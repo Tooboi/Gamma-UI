@@ -327,6 +327,9 @@ select {
 
 .side-nav {
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: var(--col-surface);
   border-right: var(--line-3) solid var(--col-surface2);
   border-bottom: var(--line-3) solid var(--col-surface2);
@@ -341,7 +344,13 @@ select {
   display: list-item;
   list-style: none;
   border-bottom: var(--line-3) solid var(--col-surface2);
-  padding: 0.25rem 0 0.25rem 1rem;
+  padding: 0.5rem 0 0.25rem 1rem;
+}
+.side-nav ul li:last-child {
+  border-bottom: var(--line-3) solid transparent;
+}
+.side-nav ul li:hover {
+  background-color: var(--col-surface2);
 }
 
 .container {
@@ -429,6 +438,30 @@ select {
     max-width: 1320px;
   }
 }
+.gap-0 {
+  gap: 0;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 1rem;
+}
+
+.gap-4 {
+  gap: 1.5rem;
+}
+
+.gap-5 {
+  gap: 3rem;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -477,7 +510,7 @@ select {
   padding-top: 0;
 }
 
-.pr-0 {
+.pe-0 {
   padding-right: 0;
 }
 
@@ -485,7 +518,7 @@ select {
   padding-bottom: 0;
 }
 
-.pl-0 {
+.ps-0 {
   padding-left: 0;
 }
 
@@ -537,7 +570,7 @@ select {
   padding-top: 0.25rem;
 }
 
-.pr-1 {
+.pe-1 {
   padding-right: 0.25rem;
 }
 
@@ -545,7 +578,7 @@ select {
   padding-bottom: 0.25rem;
 }
 
-.pl-1 {
+.ps-1 {
   padding-left: 0.25rem;
 }
 
@@ -597,7 +630,7 @@ select {
   padding-top: 0.5rem;
 }
 
-.pr-2 {
+.pe-2 {
   padding-right: 0.5rem;
 }
 
@@ -605,7 +638,7 @@ select {
   padding-bottom: 0.5rem;
 }
 
-.pl-2 {
+.ps-2 {
   padding-left: 0.5rem;
 }
 
@@ -657,7 +690,7 @@ select {
   padding-top: 1rem;
 }
 
-.pr-3 {
+.pe-3 {
   padding-right: 1rem;
 }
 
@@ -665,7 +698,7 @@ select {
   padding-bottom: 1rem;
 }
 
-.pl-3 {
+.ps-3 {
   padding-left: 1rem;
 }
 
@@ -717,7 +750,7 @@ select {
   padding-top: 1.5rem;
 }
 
-.pr-4 {
+.pe-4 {
   padding-right: 1.5rem;
 }
 
@@ -725,7 +758,7 @@ select {
   padding-bottom: 1.5rem;
 }
 
-.pl-4 {
+.ps-4 {
   padding-left: 1.5rem;
 }
 
@@ -777,7 +810,7 @@ select {
   padding-top: 3rem;
 }
 
-.pr-5 {
+.pe-5 {
   padding-right: 3rem;
 }
 
@@ -785,7 +818,7 @@ select {
   padding-bottom: 3rem;
 }
 
-.pl-5 {
+.ps-5 {
   padding-left: 3rem;
 }
 
@@ -1283,6 +1316,12 @@ select {
 
 .card {
   background-color: var(--col-surface);
+  border: var(--line-3) solid var(--col-surface2);
+  border-radius: 0.25rem;
+}
+
+.card-fill {
+  background-color: var(--col-surface2);
   border: var(--line-3) solid var(--col-surface2);
   border-radius: 0.25rem;
 }
