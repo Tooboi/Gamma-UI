@@ -13,7 +13,7 @@ Visit the documentation here: [GammaUI](https://tooboi.github.io/Gamma-UI/) (not
 This stylesheet is available through a CDN link
 
 ```
-<link rel="stylesheet" href="https://res.cloudinary.com/dlvmcylti/raw/upload/v1673149797/CDN/gamma_UI_f2opf2.css" />
+<link rel="stylesheet" href="https://res.cloudinary.com/dlvmcylti/raw/upload/v1673216008/CDN/gamma_UI_tuvblm.css" />
 ```
 
 - [Grid](#grid)

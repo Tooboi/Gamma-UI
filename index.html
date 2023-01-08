@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/gamma_UI.css" />
+    <link rel="icon" href="./images/Logo.png" />
     <title>Gamma UI</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
         <img src="./images/Logo.png" alt="" />
-        <a class="navbar-header" id="top" href="/">Gamma UI</a>
+        <a class="navbar-header" id="top" href="#">Gamma UI</a>
       </div>
     </nav>
 
@@ -25,7 +26,7 @@
             <b><a href="#flex">Flex</a></b>
           </li>
           <li>
-            <b><a href="#">Container</a></b>
+            <b><a href="#container">Container</a></b>
           </li>
           <li>
             <b><a href="#">Typography</a></b>
@@ -52,10 +53,11 @@
           <h1 class="text-align-center mb-0 mt-2">Gamma UI</h1>
           <h5 class="text-align-center mb-0">version 0.1.1</h5>
           <p class="text-align-center">A clean, simple, and responsive CSS framework that allows easy theme changes</p>
+          <a id="grid"></a>
         </div>
         <div class="container col-12 card justify-content-center flex-column my-2">
           <div class="row justify-content-center">
-            <h1><a id="grid">Grid</a></h1>
+            <h1>Grid</h1>
           </div>
           <div class="justify-content-center flex-wrap pb-3">
             <p class="ps-4">Grid system is a flex container divided into 12 parts</p>
@@ -114,6 +116,7 @@
               <div class="row col-md-6 card-fill justify-content-center mb-1">col-md-6</div>
             </div>
             <div class="row justify-content-center">
+              <a id="flex"></a>
               <pre class="card p-2 mx-2">
 &lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row col-6 col-md-6&quot;&gt;
@@ -127,7 +130,7 @@
 
         <div class="container col-12 card justify-content-center flex-column my-2">
           <div class="row justify-content-center">
-            <h1><a id="flex">Flex</a></h1>
+            <h1>Flex</h1>
           </div>
           <div class="row justify-content-center flex-wrap pb-3">
             <div class="container col-12 justify-content-center flex-column mt-4">
@@ -203,17 +206,66 @@
               </div>
             </div>
             <div class="container flex-column mt-4">
-              <h2 class="ps-4 mb-0">Align Content</h2>
+              <h2 class="ps-4 mb-0">Align Items</h2>
               <ul>
-                <li>align-content-center</li>
-                <li>align-content-space-between</li>
-                <li>align-content-space-around</li>
-                <li>align-content-space-evenly</li>
-                <li>align-content-stretch</li>
+                <li>align-items-start</li>
+                <li>align-items-center</li>
+                <li>align-items-end</li>
+                <li>align-items-stretch</li>
+                <li>align-items-baseline</li>
+              </ul>
+            </div>
+            <div class="container flex-column mt-4">
+              <h2 class="ps-4 mb-0">Align Self</h2>
+              <ul>
+                <li>align-self-start</li>
+                <li>align-self-center</li>
+                <li>align-self-end</li>
+                <li>align-self-stretch</li>
+                <li>align-self-baseline</li>
+              </ul>
+            </div>
+            <div class="container flex-column mt-4">
+              <h2 class="ps-4 mb-0">Justify Items</h2>
+              <a id="container"></a>
+              <ul>
+                <li>justify-items-start</li>
+                <li>justify-items-center</li>
+                <li>justify-items-end</li>
+                <li>justify-items-stretch</li>
               </ul>
             </div>
           </div>
         </div>
+        
+        <div class="container col-12 card justify-content-center flex-column my-2">
+          <div class="row justify-content-center">
+            <h1>Container</h1>
+          </div>
+          <div class="row justify-content-center flex-wrap pb-3">
+            <div class="container col-12 justify-content-center flex-column mt-4">
+              <p class="ps-4 mb-0">Containers are the building block of Gamma UI</p>
+              <p class="ps-4 mb-0">They are responsive flex boxes that snap to breakpoints</p>
+              <p class="ps-4 mb-0"><b>Must use both container and container-{size} for responsive behavior</b></p>
+              <p class="ps-4 mb-0">When used with a row you are set to add anything to your page</p>
+              <p class="ps-4 mb-0">This paragraph is inside a container, the code below is inside a row</p>
+              <div class="row justify-content-center">
+                <pre class="card p-2 mx-2">
+&lt;div class=&quot;container container-md&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    ...content...
+  &lt;/div&gt;
+&lt;/div&gt;</pre
+                >
+              </div>
+              <p class="ps-4 mb-0">Use the naming format: <b>container-{size}</b></p>
+              <p class="ps-4 mb-0">container will be 100% width under the set breakpoint</p>
+              <p class="ps-4 mb-0">Otherwise it will snap to each breakpoint</p>
+              <p class="ps-4 mb-0"><b>When using with a navbar you should add a mt-5 class to compensate for the navbar height</b></p>
+            </div>
+          </div>
+        </div>
+      
       </section>
     </main>
   </body>
