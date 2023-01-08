@@ -1,12 +1,14 @@
 .navbar {
     padding: 0.25rem 0.5rem;
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--col-surface);
     width: 100%;
     border-bottom: var(--line-3) solid var(--col-surface2);
+    z-index: 10000;
     .container {
         flex-direction: row;
         align-items: center;
@@ -29,4 +31,22 @@
 }
 .navbar-header {
     font-size: 1.5rem;
+}
+.side-nav {
+    width: 100%;
+    background-color: var(--col-surface);
+    border-right: var(--line-3) solid var(--col-surface2);
+    border-bottom: var(--line-3) solid var(--col-surface2);
+    border-bottom-right-radius: 0.25rem;
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin-top: 0;
+        li {
+            display: list-item;
+            list-style: none;
+            border-bottom: var(--line-3) solid var(--col-surface2);
+            padding: 0.25rem 0 0.25rem 1rem;
+        }
+    }
 }

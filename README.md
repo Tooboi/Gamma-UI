@@ -6,7 +6,15 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/tooboi/gamma-ui?color=77B255&logo=sass&logoColor=77B255)
 
-A clean, simple, and responsive CSS framework
+A clean, simple, and responsive CSS framework that allows easy theme changes
+
+Visit the documentation here: [GammaUI](https://tooboi.github.io/Gamma-UI/) (not yet up to date - refer to README)
+
+This stylesheet is available through a CDN link
+
+```
+<link rel="stylesheet" href="https://res.cloudinary.com/dlvmcylti/raw/upload/v1673149797/CDN/gamma_UI_f2opf2.css" />
+```
 
 - [Grid](#grid)
 - [Flex](#flex)
@@ -16,6 +24,7 @@ A clean, simple, and responsive CSS framework
 - [Color](#color)
 - [Buttons](#buttons)
 - [Cards](#cards)
+- [Nav](#nav)
 
 ## Grid
 
@@ -176,5 +185,44 @@ Below is an example of how to use them
     <button class="btn btn-outline-primary m-1">Button</button>
     <button class="btn btn-primary m-1">Button</button>
   </div>
+</div>
+```
+
+## Nav
+
+### Top Navbar
+
+This basic navbar allows you to have an image and heading link as demonstrated below
+
+![Navbar](./images/Nav.png)
+
+- At the smallest breakpoint, the nav content will snap to center
+
+This can be achieved with the following code
+
+```
+<nav class="navbar">
+  <div class="container">
+    <img src="./images/Logo.png" alt="">
+    <a class="navbar-header" href="#">Gamma UI</a>
+  </div>
+</nav>
+```
+
+### Side Nav
+
+A left justified nav bar using an unordered list
+
+![Sidenav](./images/Sidenav.png)
+
+In this case the side nav is one of two items in a flexbox taking up col-3 width with the other using up the rest of the page to make a side nav and body
+
+```
+<div class="col-3 side-nav me-2">
+  <ul>
+    <li><b><a href="#">Item One</a></b></li>
+    <li><b><a href="#">Item Two</a></b></li>
+    <li><b><a href="#">Item Three</a></b></li>
+  </ul>
 </div>
 ```
