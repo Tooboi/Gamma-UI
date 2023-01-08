@@ -21,13 +21,13 @@ A clean, simple, and responsive CSS framework
 
 ### Columns
 
-Works on a 12 column grid using with each number representing how many grid columns the element will take up
+Works on a 12 column grid using with each number representing 100% width divided by the column number
 
 The classes are named using the format col-{numOfCols}
 
-- `col-1` will span 1 column at 100% width
+- `col-1` - 1/12% of 100% equal to 8.3%
 
-- `col-6` will span half the container or equal to 6 columns
+- `col-6` - 6/12% of 100% equal to 50%
 
 - and so on until `col-12`
 
@@ -35,7 +35,8 @@ Must be inside a container
 
 ```
 <div class="container">
-    <div class="col-12">
+    <div class="row col-12">
+      ...content...
     </div>
 </div>
 ```
@@ -63,7 +64,6 @@ Examples
 - col-xl-4
 
 ## Flex
-
 
 ## Font
 
@@ -168,13 +168,13 @@ Below is an example of how to use them
 ![Card](./images/Card.png)
 
 ```
-<div class="container card">
+<div class="container col-6 card justify-content-center flex-column mt-5">
   <div class="row justify-content-center">
-    <h2 class="text-align-center">Card</h2>
+    <h1>Card</h1>
   </div>
   <div class="row justify-content-center flex-wrap pb-3">
-    <button class="btn btn-outline-primary mx-1">Max-Width</button>
-    <button class="btn btn-primary mx-1">960px</button>
+    <button class="btn btn-outline-primary m-1">Button</button>
+    <button class="btn btn-primary m-1">Button</button>
   </div>
 </div>
 ```

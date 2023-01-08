@@ -1,0 +1,32 @@
+.navbar {
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--col-surface);
+    width: 100%;
+    border-bottom: var(--line-3) solid var(--col-surface2);
+    .container {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+            max-height: 1.5rem;
+        }
+    }
+    @media (max-width: 576px) {
+        .container {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            img {
+                max-height: 1.5rem;
+            }
+        }
+    }
+}
+.navbar-header {
+    font-size: 1.5rem;
+}

@@ -23,3 +23,10 @@ $weights: (
       font-weight: $value;
    }
 }
+a {
+    text-decoration: none;
+    color: var(--col-on-surface);
+    &:hover {
+        color: var(--col-p-200);
+    }
+}

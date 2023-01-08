@@ -1,21 +1,27 @@
 $columns: 12;
 $breakpoints: (
-   "sm": 576px,
-   "md": 768px,
-   "lg": 992px,
-   "xl": 1200px,
+    "sm": 576px,
+    "md": 768px,
+    "lg": 992px,
+    "xl": 1200px,
 );
 @for $i from 1 through $columns {
-   .col-#{$i} {
-      grid-column: span $i;
-   }
-}
-@each $breakpoint, $bp-value in $breakpoints {
-   @for $i from 1 through $columns {
-      .col-#{$breakpoint}-#{$i} {
-         @media (min-width: $bp-value) {
-            grid-column: span $i;
-         }
-      }
-   }
-}
+    .col-#{$i} {
+       width: 100% / $columns * $i;
+    }
+ }
+ 
+ @each $breakpoint, $bp-value in $breakpoints {
+    @for $i from 1 through $columns {
+       .col-#{$breakpoint}-#{$i} {
+          @media (min-width: $bp-value) {
+             width: 100% / $columns * $i;
+          }
+       }
+    }
+ }
+
+// This will generate classes such as .col-1 and .col-md-6, 
+// which you can use to specify the width of a flex item. For example, 
+// .col-md-6 will set the width of the flex item to 50% on screens with 
+// a minimum width of 768px (the md breakpoint).
