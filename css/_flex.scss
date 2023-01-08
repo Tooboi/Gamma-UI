@@ -32,6 +32,9 @@ $justify-items-values: center, start, end, stretch;
 .flex {
    display: flex;
 }
+.inline-flex {
+   display: inline-flex;
+}
 .flex-wrap {
    flex-wrap: wrap;
 }

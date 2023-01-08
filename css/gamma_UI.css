@@ -291,7 +291,7 @@ select {
 
 .navbar {
   padding: 0.25rem 0.5rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   flex-wrap: wrap;
@@ -327,9 +327,10 @@ select {
 
 .side-nav {
   width: 100%;
-  position: -webkit-sticky;
+  position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
+  align-self: flex-start;
   background-color: var(--col-surface);
   border-right: var(--line-3) solid var(--col-surface2);
   border-bottom: var(--line-3) solid var(--col-surface2);
@@ -338,7 +339,7 @@ select {
 .side-nav ul {
   padding-left: 0;
   list-style: none;
-  margin-top: 0;
+  margin-top: 3rem;
 }
 .side-nav ul li {
   display: list-item;
@@ -1290,6 +1291,10 @@ select {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -1324,6 +1329,34 @@ select {
   background-color: var(--col-surface2);
   border: var(--line-3) solid var(--col-surface2);
   border-radius: 0.25rem;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+p {
+  font-size: 1em;
 }
 
 .text-align-left {

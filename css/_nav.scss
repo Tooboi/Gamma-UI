@@ -1,6 +1,6 @@
 .navbar {
     padding: 0.25rem 0.5rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     display: flex;
     flex-wrap: wrap;
@@ -34,9 +34,10 @@
 }
 .side-nav {
     width: 100%;
-    position: -webkit-sticky;
+    position: -webkit-sticky; /* for Safari */
     position: sticky;
     top: 0;
+    align-self: flex-start;
     background-color: var(--col-surface);
     border-right: var(--line-3) solid var(--col-surface2);
     border-bottom: var(--line-3) solid var(--col-surface2);
@@ -44,7 +45,8 @@
     ul {
         padding-left: 0;
         list-style: none;
-        margin-top: 0;
+        margin-top: 3rem;
+        // padding-top: ;
         li {
             display: list-item;
             list-style: none;

@@ -194,6 +194,7 @@ container-{size}
 
 - Otherwise it will snap to each breakpoint
 
+When using with a navbar you should add a mt-5 class to compensate for the navbar height
 ## Spacing
 
 ### Gap
