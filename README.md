@@ -74,6 +74,88 @@ Examples
 
 ## Flex
 
+Allows all flex transformers
+
+### Basic
+
+- flex - display: flex
+
+### Wrap
+
+- flex-wrap
+
+- flex-nowrap
+
+### Flex Direction
+
+- flex-row
+
+- flex-row-reverse
+
+- flex-column
+
+- flex-column-reverse
+
+### Align Content
+
+- align-content-center
+
+- align-content-space-between
+
+- align-content-space-around
+
+- align-content-space-evenly
+
+- align-content-stretch
+
+### Justify Content
+
+- justify-content-start
+
+- justify-content-center
+
+- justify-content-end
+
+- justify-content-space-between
+
+- justify-content-space-around
+
+- justify-content-space-evenly
+
+### Align Items
+
+- align-items-start
+
+- align-items-center
+
+- align-items-end
+
+- align-items-stretch
+
+- align-items-baseline
+
+### Align Self
+
+- align-self-start
+
+- align-self-center
+
+- align-self-end
+
+- align-self-stretch
+
+- align-self-baseline
+
+### Justify Items
+
+- justify-items-start
+
+- justify-items-center
+
+- justify-items-end
+
+- justify-items-stretch
+
 ## Font
 
 ### Weight
