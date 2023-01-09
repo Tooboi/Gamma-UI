@@ -41,7 +41,7 @@
     background-color: var(--col-surface);
     border-right: var(--line-3) solid var(--col-surface2);
     border-bottom: var(--line-3) solid var(--col-surface2);
-    border-bottom-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.5rem;
     ul {
         padding-left: 0;
         list-style: none;
@@ -64,7 +64,7 @@
 @media (min-width: 1400px) {
     .side-nav {
         border-left: var(--line-3) solid var(--col-surface2);
-        border-bottom-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.5rem;
     }
   }
   @media (max-width: 767.98px) {
