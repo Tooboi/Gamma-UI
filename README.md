@@ -4,7 +4,7 @@
 
 <h1 style="text-align:center">Gamma UI</h1>
 
-![GitHub top language](https://img.shields.io/github/languages/top/tooboi/gamma-ui?color=77B255&logo=sass&logoColor=77B255)
+![GitHub top language](https://img.shields.io/github/languages/top/tooboi/gamma-ui?color=77B255)
 
 A clean, simple, and responsive CSS framework that allows easy theme changes
 
