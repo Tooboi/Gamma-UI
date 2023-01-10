@@ -4,7 +4,7 @@
 
 <h1 style="text-align:center">Gamma UI</h1>
 
-![GitHub top language](https://img.shields.io/github/languages/top/tooboi/gamma-ui?color=77B255&logo=sass&logoColor=77B255)
+![GitHub top language](https://img.shields.io/github/languages/top/tooboi/gamma-ui?color=77B255)
 
 A clean, simple, and responsive CSS framework that allows easy theme changes
 
@@ -13,7 +13,7 @@ Visit the documentation here: [GammaUI](https://tooboi.github.io/Gamma-UI/) (not
 This stylesheet is available through a CDN link
 
 ```
-<link rel="stylesheet" href="https://res.cloudinary.com/dlvmcylti/raw/upload/v1673216008/CDN/gamma_UI_tuvblm.css" />
+<link rel="stylesheet" href="https://res.cloudinary.com/dlvmcylti/raw/upload/v1673246905/CDN/gamma_UI_o33lau.css" />
 ```
 
 - [Grid](#grid)
@@ -195,6 +195,7 @@ container-{size}
 - Otherwise it will snap to each breakpoint
 
 When using with a navbar you should add a mt-5 class to compensate for the navbar height
+
 ## Spacing
 
 ### Gap

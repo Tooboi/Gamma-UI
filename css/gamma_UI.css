@@ -117,6 +117,11 @@ select {
   border-radius: 0.25rem;
   color: var(--col-on-primary);
   background-color: transparent;
+  transition: color 150ms ease-in-out, background-color 150ms ease-in-out, border-color 150ms ease-in-out, box-shadow 150ms ease-in-out;
+  transition-duration: 150ms, 150ms, 150ms, 150ms;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s, 0s;
+  transition-property: color, background-color, border-color, box-shadow;
 }
 .btn:hover {
   cursor: pointer;
@@ -335,7 +340,7 @@ select {
   background-color: var(--col-surface);
   border-right: var(--line-3) solid var(--col-surface2);
   border-bottom: var(--line-3) solid var(--col-surface2);
-  border-bottom-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.5rem;
 }
 .side-nav ul {
   padding-left: 0;
@@ -358,7 +363,7 @@ select {
 @media (min-width: 1400px) {
   .side-nav {
     border-left: var(--line-3) solid var(--col-surface2);
-    border-bottom-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.5rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -1335,19 +1340,19 @@ select {
 .card {
   background-color: var(--col-surface);
   border: var(--line-3) solid var(--col-surface2);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .card-fill {
   background-color: var(--col-surface2);
   border: var(--line-3) solid var(--col-surface3);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .card-fill-pre {
   background-color: var(--col-surface2);
   border: var(--line-3) solid var(--col-surface3);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 h1 {
