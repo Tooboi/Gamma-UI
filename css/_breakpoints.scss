@@ -5,22 +5,93 @@ $breakpoints: (
     "lg": 992px,
     "xl": 1200px,
 );
-@for $i from 1 through $columns {
-    .col-#{$i} {
-       width: 100% / $columns * $i;
-    }
- }
- 
- @each $breakpoint, $bp-value in $breakpoints {
-    @for $i from 1 through $columns {
-       .col-#{$breakpoint}-#{$i} {
-          @media (min-width: $bp-value) {
-             width: 100% / $columns * $i;
-          }
-       }
-    }
- }
 
+@each $breakpoint, $bp-value in $breakpoints {
+  @media screen and (min-width: $bp-value) {
+    .col-#{$breakpoint}-auto {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+
+    @for $i from 1 through $columns {
+      .col-#{$breakpoint}-#{$i} {
+        flex: calc(100% * #{$i} / #{$columns} - 0.5%);
+      }
+    }
+
+    .justify-space-between-#{$breakpoint} {
+      justify-content: space-between;
+    }
+
+    .justify-space-around-#{$breakpoint} {
+      justify-content: space-around;
+    }
+
+    .justify-flex-start-#{$breakpoint} {
+      justify-content: flex-start;
+    }
+
+    .justify-flex-end-#{$breakpoint} {
+      justify-content: flex-end;
+    }
+
+    .justify-center-#{$breakpoint} {
+      justify-content: center;
+    }
+
+    .align-stretch-#{$breakpoint} {
+      align-items: stretch;
+    }
+
+    .align-end-#{$breakpoint} {
+      align-items: flex-end;
+    }
+
+    .align-center-#{$breakpoint} {
+      align-items: center;
+    }
+  }
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    flex: calc(100% * #{$i} / #{$columns} - 0.5%);
+  }
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+ 
 // This will generate classes such as .col-1 and .col-md-6, 
 // which you can use to specify the width of a flex item. For example, 
 // .col-md-6 will set the width of the flex item to 50% on screens with 
